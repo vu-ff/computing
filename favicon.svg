@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Quantum Computing">
+  <rect width="32" height="32" rx="7" fill="#5b2d86"/>
+  <!-- The front page's `computing' glyph (mphys/tools/render.py, read-only):
+       a controlled gate on two wires, the CNOT of every circuit in the notes,
+       control dot on the top wire (Bible C1), drawn in white on the accent. -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="1.8">
+    <path d="M4 10 L28 10"/><path d="M4 23 L28 23"/>
+    <path d="M16 10 L16 23"/>
+    <circle cx="16" cy="10" r="2.4" fill="#ffffff" stroke="none"/>
+    <circle cx="16" cy="23" r="3.6"/>
+  </g>
+</svg>

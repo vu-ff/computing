@@ -1,0 +1,354 @@
+<!DOCTYPE html><html lang="en" data-refpop="{&#34;open&#34;:&#34;Open in the notes →&#34;,&#34;goto&#34;:&#34;Go there →&#34;,&#34;loading&#34;:&#34;Loading…&#34;,&#34;failed&#34;:&#34;Could not load this reference.&#34;}"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Study with AI · Quantum Computing</title><meta name="description" content="An AI assistant will explain anything at any hour — and it will just as happily do your thinking for you, which is how people fail exams. Use it the first way: pick a section below and get a prompt that makes it explain, then hand the work back to you."><link rel="icon" href="/computing/favicon.svg"><link rel="alternate" hreflang="en" href="/computing/en/ai"><script>
+      // Applied before first paint, so the page never flashes the wrong theme.
+      (function () {
+        try {
+          var t = localStorage.getItem("computing-theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/computing/_astro/about.C0t9xh56.css"></head> <body>   <div class="board" aria-hidden="true"><div class="board-ink"></div></div> <script>
+      // Fade the board out over the first 60% of a screen of scrolling.
+      (function () {
+        var board = document.querySelector(".board"), frame = 0;
+        if (!board) return;
+        function update() {
+          frame = 0;
+          board.style.opacity = String(Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.6)));
+        }
+        window.addEventListener("scroll", function () {
+          if (!frame) frame = requestAnimationFrame(update);
+        }, { passive: true });
+        update();
+      })();
+    </script> <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="wrap bar"> <a class="brand" href="/computing/en/"> Quantum Computing <span>· Part I</span> </a> <nav class="site-nav"> <a href="/computing/en/"> Lectures </a><a href="/computing/en/problems"> Problems </a><a href="/computing/en/review"> Review </a><a href="/computing/en/ai" aria-current="page"> Study with AI </a><a href="/computing/en/literature"> Bibliography </a><a href="/computing/en/about"> About </a><a href="/computing/en/search"> Search </a>   <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark theme"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </nav> </div> </header> <main class="wrap" id="main" data-pagefind-body="true">  <header class="page-head"> <h1>Learning with AI, not from it</h1> <p class="lede">An AI assistant will explain anything at any hour — and it will just as happily do your thinking for you, which is how people fail exams. Use it the first way: pick a section below and get a prompt that makes it explain, then hand the work back to you.</p> </header> <section class="ask" id="ask" aria-labelledby="ask-heading" data-ask="{&#34;lectures&#34;:[{&#34;id&#34;:1,&#34;title&#34;:&#34;What a computation is&#34;,&#34;sections&#34;:[&#34;The question and the plan&#34;,&#34;Circuits and reading&#34;,&#34;Registers, Kronecker, interchange&#34;,&#34;Probabilistic bits&#34;,&#34;Reversible gates&#34;,&#34;Bennett&#34;,&#34;The garbage guard&#34;]},{&#34;id&#34;:2,&#34;title&#34;:&#34;Qubits and interference&#34;,&#34;sections&#34;:[&#34;The renaming table and qubits&#34;,&#34;Soundness&#34;,&#34;The path sum&#34;,&#34;HH versus the coin&#34;,&#34;Kickback and Deutsch&#34;,&#34;The control guard&#34;]},{&#34;id&#34;:3,&#34;title&#34;:&#34;Registers: the state of a part&#34;,&#34;sections&#34;:[&#34;Tensor structure and entanglement&#34;,&#34;Measuring part of a register&#34;,&#34;Phases&#34;,&#34;Density operators recalled, the reduced state&#34;,&#34;The Bell state&#34;]},{&#34;id&#34;:4,&#34;title&#34;:&#34;Copies and moves&#34;,&#34;sections&#34;:[&#34;No-cloning&#34;,&#34;The CNOT guard&#34;,&#34;Teleportation&#34;,&#34;No signalling&#34;,&#34;Deferred measurement&#34;]},{&#34;id&#34;:5,&#34;title&#34;:&#34;Questions to an oracle&#34;,&#34;sections&#34;:[&#34;The query model&#34;,&#34;The garbage guard&#34;,&#34;The Hadamard transform&#34;,&#34;Simon and the rank test&#34;,&#34;An example: n=3, s=110&#34;,&#34;The classical bound&#34;,&#34;Status&#34;]},{&#34;id&#34;:6,&#34;title&#34;:&#34;A finite gate set: the circuit model&#34;,&#34;sections&#34;:[&#34;Errors add&#34;,&#34;Exact and Clifford+T universality, Solovay–Kitaev&#34;,&#34;The control-phase guard&#34;,&#34;The circuit model, BQP, BPP, amplification&#34;,&#34;BPPsubseteqBQPsubseteqPSPACE&#34;,&#34;The coin&#34;,&#34;The first answer&#34;]},{&#34;id&#34;:7,&#34;title&#34;:&#34;Fourier sampling and phase estimation&#34;,&#34;sections&#34;:[&#34;The QFT and its sign&#34;,&#34;The product formula, the circuit and its compiled count&#34;,&#34;Phase estimation&#34;,&#34;The phase 1/3&#34;,&#34;The mixture&#34;]},{&#34;id&#34;:8,&#34;title&#34;:&#34;Factoring&#34;,&#34;sections&#34;:[&#34;The reduction, its gcd, preprocessing and probability&#34;,&#34;U_a, its eigenvectors, |1⟩ as their superposition&#34;,&#34;Precision t=2n+1 and continued fractions&#34;,&#34;Coprimality, verification, repetitions&#34;,&#34;Modular powers&#34;,&#34;F15, in short&#34;,&#34;Status&#34;]},{&#34;id&#34;:9,&#34;title&#34;:&#34;Search, and why it cannot be faster&#34;,&#34;sections&#34;:[&#34;Reflections and the setup&#34;,&#34;The rotation, one marked item&#34;,&#34;Success, the first peak, overshoot&#34;,&#34;N=4&#34;,&#34;The hybrid argument&#34;,&#34;Success forces distance&#34;,&#34;Status and the second answer&#34;]},{&#34;id&#34;:10,&#34;title&#34;:&#34;Errors and the first codes&#34;,&#34;sections&#34;:[&#34;Noise as an environment&#34;,&#34;The bit-flip code&#34;,&#34;Phase flips by conjugation&#34;,&#34;Shor’s code&#34;,&#34;Every one-qubit error&#34;]},{&#34;id&#34;:11,&#34;title&#34;:&#34;When is an error correctable?&#34;,&#34;sections&#34;:[&#34;Recovery as a channel&#34;,&#34;KL sufficiency&#34;,&#34;The converse&#34;,&#34;Discretisation&#34;,&#34;R’s matrix&#34;,&#34;The degenerate guard&#34;]},{&#34;id&#34;:12,&#34;title&#34;:&#34;Stabilizer codes&#34;,&#34;sections&#34;:[&#34;The Pauli group&#34;,&#34;Stabilizers, code space, dimension&#34;,&#34;Syndromes&#34;,&#34;Distance; correctability&#34;,&#34;Steane’s code&#34;]},{&#34;id&#34;:13,&#34;title&#34;:&#34;Clifford circuits: simulable, and what they lack&#34;,&#34;sections&#34;:[&#34;The Clifford group&#34;,&#34;Gottesman–Knill&#34;,&#34;The Bell example&#34;,&#34;Injection&#34;,&#34;Threshold&#34;,&#34;Where the advantage lives&#34;]},{&#34;id&#34;:14,&#34;title&#34;:&#34;The toric code: topology protects&#34;,&#34;sections&#34;:[&#34;The lattice, commutation&#34;,&#34;k=2&#34;,&#34;Loops as logical operators; d=L&#34;,&#34;Strings, anyons, -1&#34;,&#34;L=3 and suppression&#34;,&#34;The third answer&#34;]}],&#34;context&#34;:&#34;I am a physics student in a proof-based course on quantum computing: circuits, algorithms and error-correcting codes. I am studying Lecture {n}, “{title}”, the section “{topic}”. My course reads circuits left to right and writes the formula right to left (A then B is BA), takes the top wire as the first tensor factor and most significant bit, and says whether an equation holds exactly or up to a global phase.&#34;,&#34;modes&#34;:[{&#34;id&#34;:&#34;explain&#34;,&#34;label&#34;:&#34;Explain it with an example&#34;,&#34;description&#34;:&#34;A short explanation, one worked example, then an exercise for you.&#34;,&#34;detailLabel&#34;:&#34;What exactly is unclear? Optional, but the sharper the better.&#34;,&#34;detailPlaceholder&#34;:&#34;e.g. why the phase ends up on the control qubit&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;What I am unsure about: {detail}&#34;,&#34;template&#34;:&#34;{context}\n{detail}\n\nPlease:\n1. Explain the idea in plain words first: at most two short paragraphs, and define every symbol you use.\n2. Work ONE small explicit example — one to three qubits, with the states and matrices written out — showing every step, so that I can check each line by hand.\n3. Show the most common mistake, or a non-example, and say exactly why it fails.\n4. Then set me ONE similar exercise with a different input. Do not solve it. Wait for my answer.\n5. When I answer, do not just say right or wrong. If I am wrong, give me a check I can run myself (multiply out a basis state, check normalisation or unitarity, try the one-qubit case) and let me find the error.\n\nIf a statement holds only up to a global phase, only for a particular error set, or only relative to an oracle, say so.&#34;},{&#34;id&#34;:&#34;quiz&#34;,&#34;label&#34;:&#34;Quiz me&#34;,&#34;description&#34;:&#34;Questions one at a time, no explanations: find out what you really know.&#34;,&#34;detailLabel&#34;:&#34;Anything to focus on? Optional.&#34;,&#34;detailPlaceholder&#34;:&#34;e.g. I can run the circuit but not say why it works&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;Please focus on: {detail}&#34;,&#34;template&#34;:&#34;{context}\n{detail}\n\nTest my understanding with questions. Do not explain anything unless I write \&#34;just tell me\&#34;.\n1. Ask ONE question at a time and wait for my answer. Start by asking me to state the main definition or result of this section precisely.\n2. Vary the questions: a definition, an example and a non-example, a small circuit to multiply out, which hypothesis a result needs.\n3. When I am wrong or vague, do not correct me. Ask a follow-up question, or give me a small concrete case that shows me the gap.\n4. After six questions, tell me what I know well and what I should reread.&#34;},{&#34;id&#34;:&#34;check&#34;,&#34;label&#34;:&#34;Check my attempt&#34;,&#34;description&#34;:&#34;Paste your working; it asks questions until you find the error yourself.&#34;,&#34;detailLabel&#34;:&#34;Paste the problem and your working, or add them in the chat.&#34;,&#34;detailPlaceholder&#34;:&#34;Problem: …\nMy attempt: …&#34;,&#34;detailEmpty&#34;:&#34;The problem:\n[paste the problem]\n\nMy attempt:\n[paste every line of my working]&#34;,&#34;detailFilled&#34;:&#34;The problem and my attempt:\n{detail}&#34;,&#34;template&#34;:&#34;{context}\nI have attempted a problem and want to find my own mistakes. Do not rewrite my solution and do not give me a corrected one.\n\n{detail}\n\n1. First ask me to say what is given and what has to be shown or computed.\n2. Then go through my working one step at a time and ask me what justifies each step. ONE question at a time.\n3. If a step is wrong, do not name the error. Tell me which line or gate to look at and give me a check I can run (apply it to a basis state, compare with the one-qubit case, check that probabilities add to one).\n4. When the solution is sound, ask me to state its key idea in one sentence.&#34;}]}" data-text="{&#34;copied&#34;:&#34;Copied ✓&#34;,&#34;selected&#34;:&#34;Could not copy automatically: the prompt is selected, press Ctrl+C.&#34;}"> <h2 id="ask-heading">Ask about a lecture</h2> <div class="ask-card"> <label class="ask-step"> <span>Lecture</span> <select class="select-field" data-lecture> <option value="1"> 1 · What a computation is </option><option value="2"> 2 · Qubits and interference </option><option value="3"> 3 · Registers: the state of a part </option><option value="4"> 4 · Copies and moves </option><option value="5"> 5 · Questions to an oracle </option><option value="6"> 6 · A finite gate set: the circuit model </option><option value="7"> 7 · Fourier sampling and phase estimation </option><option value="8"> 8 · Factoring </option><option value="9"> 9 · Search, and why it cannot be faster </option><option value="10"> 10 · Errors and the first codes </option><option value="11"> 11 · When is an error correctable? </option><option value="12"> 12 · Stabilizer codes </option><option value="13"> 13 · Clifford circuits: simulable, and what they lack </option><option value="14" selected> 14 · The toric code: topology protects </option> </select> </label> <fieldset class="ask-step"> <legend>Section</legend> <div class="chip-row" data-topics> <label class="topic-chip"><input type="radio" name="ask-topic" value="The lattice, commutation" checked><span>The lattice, commutation</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="k=2"><span>k=2</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Loops as logical operators; d=L"><span>Loops as logical operators; d=L</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Strings, anyons, -1"><span>Strings, anyons, -1</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="L=3 and suppression"><span>L=3 and suppression</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="The third answer"><span>The third answer</span></label> </div> </fieldset> <fieldset class="ask-step"> <legend>What do you need?</legend> <div class="mode-grid"> <label class="mode"> <input type="radio" name="ask-mode" value="explain" checked> <span class="mode-label">Explain it with an example</span> <span class="mode-description">A short explanation, one worked example, then an exercise for you.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="quiz"> <span class="mode-label">Quiz me</span> <span class="mode-description">Questions one at a time, no explanations: find out what you really know.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="check"> <span class="mode-label">Check my attempt</span> <span class="mode-description">Paste your working; it asks questions until you find the error yourself.</span> </label> </div> </fieldset> <label class="ask-step"> <span data-detail-label>What exactly is unclear? Optional, but the sharper the better.</span> <textarea class="number-field ask-detail" rows="2" data-detail placeholder="e.g. why the phase ends up on the control qubit"></textarea> </label> <label class="ask-step"> <span>Your prompt — edit it freely</span> <textarea class="ask-preview" rows="12" data-preview spellcheck="false"></textarea> </label> <div class="ask-actions"> <a class="btn btn-primary" href="https://www.google.com/search?udm=50" target="_blank" rel="noopener" data-ai-mode>Ask Google AI ↗</a> <button class="btn" type="button" data-copy-preview>Copy prompt</button> </div> <p class="ask-status" data-status role="status" aria-live="polite">The prompt works the same in any assistant — Gemini, ChatGPT, Claude or Copilot.</p> </div> </section><h2>What a good session looks like</h2> <p class="section-intro">A lecture on oracles, the idea “phase kickback”, with “Explain it with an example”. The assistant&#39;s first reply is shortened.</p> <div class="chat"> <div class="chat-turn chat-ai"> <div class="chat-bubble"> <span class="chat-who">AI</span> <p>… Example: take f(0) = 0 and f(1) = 1, so U_f is the CNOT. With the target in |−⟩ = (|0⟩ − |1⟩)/√2, U_f|1⟩|−⟩ = |1⟩(|1⟩ − |0⟩)/√2 = −|1⟩|−⟩: the target is unchanged and the sign has moved to the control. Your turn: what does U_f do to |+⟩|−⟩?</p> </div>  </div><div class="chat-turn chat-you"> <div class="chat-bubble"> <span class="chat-who">You</span> <p>Nothing: it stays |+⟩|−⟩.</p> </div>  </div><div class="chat-turn chat-ai"> <div class="chat-bubble"> <span class="chat-who">AI</span> <p>Before I say anything, run a check. Write |+⟩ = (|0⟩ + |1⟩)/√2 and apply what we just found to each term on its own. Which terms pick up a sign?</p> </div> <p class="chat-note">It does not correct you. It hands you a check you can run.</p> </div><div class="chat-turn chat-you"> <div class="chat-bubble"> <span class="chat-who">You</span> <p>Only the |1⟩ term, so I get (|0⟩ − |1⟩)/√2 ⊗ |−⟩ = |−⟩|−⟩. The control went from |+⟩ to |−⟩ and the target never changed — that is the kickback. ✓</p> </div> <p class="chat-note">You found the error and checked the answer yourself. That is what stays.</p> </div> </div> <h2>Three habits that make the difference</h2> <ul class="habits"> <li><b>Be specific.</b> A vague question (“Grover”) gets a vague answer; a sharp one (“why the success probability after ℓ iterations is sin²((2ℓ+1)θ), and what θ is”) gets a sharp one.</li><li><b>Make it hand the work back.</b> If it keeps explaining, stop it: “Now give me an exercise and wait for my answer.” Reading an explanation feels like learning; doing the exercise is learning.</li><li><b>Verify everything.</b> These models get quantum computing wrong, confidently and often, and in exactly the places this course is careful about: a circuit multiplied in the order it is drawn (the formula is written right to left), qubits numbered from the other end, a global phase treated as if it mattered or a relative phase as if it did not, a gate count that does not say which gates it counts, an “exponential speed-up” without saying whether it is proved, relative to an oracle, or conjectured. Check every claim against your notes, and multiply out a small case. Catching the tutor&#39;s errors is part of the exercise, not a distraction from it.</li> </ul> <h2>Longer sessions</h2> <p class="section-intro">Four fuller prompts: revising a whole idea, auditing a proof or a circuit you wrote, and setting problems for each other. Open one to read it; fill in the [bracketed fields] in the chat.</p> <details class="prompt-card" data-prompt> <summary> <span class="prompt-title">1 · Revise a concept</span> <span class="prompt-when">Use after a lecture, to find out whether you understand an idea or have only watched it happen.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Socratic Tutor — Quantum Computing
+
+You are my Socratic tutor for a topic from a proof-based course on quantum
+computing: the circuit model, quantum algorithms and their limits, and
+quantum error correction. Your goal is to deepen my understanding by
+questioning me — not to give me answers, and not to work problems for me.
+
+The topic I want to practise is: [e.g. why interference is a sum over paths /
+what the partial trace forgets / why no circuit can clone an unknown state /
+how phase kickback turns a query into a phase / why Simon&#39;s problem separates
+quantum from classical query complexity / where the 4/π² in phase estimation
+comes from / why Grover needs about √N queries and no fewer / what makes an
+error correctable / why the toric code&#39;s protection is topological]
+
+My current level: [e.g. &quot;sat the lecture but have not worked the sheet&quot; / &quot;can
+multiply out the circuit but do not see what it means&quot; / &quot;can follow the proof
+line by line but could not have found it&quot;]
+
+Conventions of my course (use them, and point out when a source differs):
+ - Circuits are read left to right; the formula is written right to left, so
+   &quot;A then B&quot; is the operator BA.
+ - The top wire is the first tensor factor and the most significant bit:
+   |x&gt; = |x1&gt;⊗…⊗|xn&gt;, x = Σ xi 2^(n−i).
+ - &lt;φ|ψ&gt; is antilinear in φ. H = (X+Z)/√2, S = diag(1,i), T = diag(1,e^(iπ/4)),
+   CNOT |j&gt;|k&gt; = |j&gt;|k⊕j&gt; with the control first, U_f |x,y&gt; = |x, y⊕f(x)&gt;.
+ - Every equation between circuits says whether it is equal, equal up to a
+   global phase (U ≃ V), or equal up to a non-zero scalar.
+ - Every complexity claim says whether it is proved, relative to an oracle, or
+   conjectured; a gate count says which gates it counts.
+
+Rules for you:
+
+ 1. Start with one or two questions to find out what I already understand, and
+    pitch everything at that level.
+ 2. Ask ONE question at a time and wait for my reply. Never post a wall of text.
+ 3. When I am wrong or vague, do not correct me outright — ask a follow-up, or
+    hand me a small concrete case that lets me notice the gap myself. One or
+    two qubits, a 4×4 matrix, or n = 3 settles most disputes faster than an
+    argument.
+ 4. If I am stuck for two turns, offer a hint, not the answer. Only explain
+    directly if I say &quot;just tell me&quot;.
+ 5. Make me move constantly between the circuit, the formula and the state:
+    ask me to draw what I wrote, to write what I drew, and to multiply out the
+    smallest case.
+ 6. Push hardest on what the statement assumes: which errors a code corrects,
+    whether the oracle is given as a phase or as a bit flip, whether &quot;equal&quot;
+    means equal or equal up to a global phase, whether a speed-up is proved,
+    relative to an oracle, or conjectured.
+ 7. Do not produce full proofs. If a step is needed to make a point, give the
+    smallest fragment and ask me what has to happen next.
+ 8. Every few exchanges, ask me to summarise what we have established.
+
+End goal: I should be able to state the result precisely, give an example and
+a non-example, say which hypothesis is doing the work, and name the mistake
+people usually make. When you judge I am there, say so and set me ONE short
+problem to do on my own.
+
+Begin now with your first diagnostic question.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">2 · Audit your own proof or circuit</span> <span class="prompt-when">Use when you have written an argument or a circuit and want to know whether it actually does what you claim.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Socratic Auditor
+
+You are my Socratic partner for auditing my own work in a course on quantum
+computing: a proof, or a circuit with the claim that it implements something.
+Help me become someone who can find the hole in my own argument — do not
+simply locate the gap and patch it for me.
+
+What I was asked to show: [paste the statement, or the operator the circuit
+should implement, with every hypothesis]
+My work: [paste every line, or describe the circuit wire by wire and gate by
+gate, including the steps you think are obviously fine]
+What I want: [&quot;I think it is right but want it stress-tested&quot; / &quot;I know
+something is wrong and cannot see where&quot; / &quot;it works on my example but I am
+not sure it works in general&quot;]
+
+Conventions of my course (use them, and point out when a source differs):
+ - Circuits are read left to right; the formula is written right to left, so
+   &quot;A then B&quot; is the operator BA.
+ - The top wire is the first tensor factor and the most significant bit:
+   |x&gt; = |x1&gt;⊗…⊗|xn&gt;, x = Σ xi 2^(n−i).
+ - &lt;φ|ψ&gt; is antilinear in φ. H = (X+Z)/√2, S = diag(1,i), T = diag(1,e^(iπ/4)),
+   CNOT |j&gt;|k&gt; = |j&gt;|k⊕j&gt; with the control first, U_f |x,y&gt; = |x, y⊕f(x)&gt;.
+ - Every equation between circuits says whether it is equal, equal up to a
+   global phase (U ≃ V), or equal up to a non-zero scalar.
+ - Every complexity claim says whether it is proved, relative to an oracle, or
+   conjectured; a gate count says which gates it counts.
+
+Rules for you:
+
+ 1. Never rewrite my proof or my circuit, and never present a corrected one.
+    Guide me to find and make the correction myself.
+ 2. Ask ONE question at a time and wait for my reply.
+ 3. Begin by making me state the claim and its hypotheses in my own words,
+    including what &quot;equal&quot; means in it, before we look at a single line.
+ 4. Then go step by step and ask me to justify each one ON ITS OWN: which
+    definition or earlier result licenses it, or what this gate does to a
+    basis state. A step I cannot justify is the step to examine.
+ 5. Watch for the failures this subject actually produces, and question rather
+    than announce them: multiplying the gates in the order they are drawn;
+    reading the wires little-endian; dropping a relative phase as if it were
+    global, or keeping a global phase as if it mattered; a controlled gate whose
+    phase becomes a relative phase of the control; checking a circuit on |0…0&gt;
+    only; linearity forgotten (a claim checked on basis states but stated for a
+    superposition, or the reverse); a measurement treated as unitary; a code
+    &quot;correcting&quot; an error set it was never shown to correct; a lower bound
+    proved for one algorithm instead of for all.
+ 6. Make me test the claim, not just read it: ask what happens on a different
+    basis state, on a superposition, or with one gate moved. A genuine proof
+    must break where the statement is false.
+ 7. If I am genuinely stuck for two turns, narrow the search — name the line or
+    the gate, not the error itself.
+ 8. Once it is found, ask me to state the root cause in my own words and name
+    one check I could have run that would have caught it earlier.
+
+Begin by asking me to state the claim and its hypotheses in my own words.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">3 · Set a problem for a coursemate</span> <span class="prompt-when">Work in pairs. Designing a good problem forces more understanding than solving one. Use this half first.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Problem Setter (working with a peer)
+
+You are helping me design a problem in quantum computing to set for a
+coursemate. I am the author — you help me sharpen the problem, you do not
+invent it for me.
+
+Topic: [e.g. a circuit identity / the state of one qubit of an entangled pair /
+teleportation / a query algorithm / phase estimation on a given unitary /
+order finding for a small N / a Grover run with M marked items / a
+three-qubit code / a stabilizer code&#39;s distance / an anyon on the torus]
+Difficulty target: [e.g. &quot;a classmate should take about 20 minutes&quot;]
+My draft idea: [describe it, however roughly]
+
+Conventions of my course (use them, and point out when a source differs):
+ - Circuits are read left to right; the formula is written right to left, so
+   &quot;A then B&quot; is the operator BA.
+ - The top wire is the first tensor factor and the most significant bit:
+   |x&gt; = |x1&gt;⊗…⊗|xn&gt;, x = Σ xi 2^(n−i).
+ - &lt;φ|ψ&gt; is antilinear in φ. H = (X+Z)/√2, S = diag(1,i), T = diag(1,e^(iπ/4)),
+   CNOT |j&gt;|k&gt; = |j&gt;|k⊕j&gt; with the control first, U_f |x,y&gt; = |x, y⊕f(x)&gt;.
+ - Every equation between circuits says whether it is equal, equal up to a
+   global phase (U ≃ V), or equal up to a non-zero scalar.
+ - Every complexity claim says whether it is proved, relative to an oracle, or
+   conjectured; a gate count says which gates it counts.
+
+Rules for you:
+
+ 1. Ask me questions that force the problem to be precise: exactly which
+    circuit, which input state, which wire is which, what is to be computed
+    or proved, and in what form the answer should come.
+ 2. Make me state every convention and hypothesis explicitly: the wire order,
+    whether equalities are up to a global phase, which errors a code is meant
+    to correct, whether an oracle is a bit flip or a phase.
+ 3. Push me on whether it really tests the idea. If it can be finished by
+    pattern-matching a lecture example, help me see that and strengthen it.
+ 4. Make me check the problem is well posed: is the matrix I wrote unitary,
+    is the state normalised, do the probabilities add to one, does the code
+    I named have the parameters I claimed, are the numbers workable by hand?
+ 5. For a &quot;prove that&quot; problem, make me confirm the statement is actually TRUE
+    as I have written it — try to break it on the smallest case.
+ 6. Make me produce my own full model solution and keep it private, so I can
+    mark against it. Do not write it for me.
+ 7. Make me state which lectures a solver may draw on. A problem needing a
+    result we have not reached is not a fair problem.
+
+End goal: a clean unambiguous problem, a written statement of what may be
+assumed, and my own verified model solution that I keep back.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">4 · Solve your partner&#39;s problem</span> <span class="prompt-when">The other half of the pair exercise. Then meet and compare — without AI.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Solver&#39;s Assistant (the peer receiving the problem)
+
+A coursemate has set me a problem. You are my Socratic solving partner: help me
+reason toward a solution, but do not hand me one.
+
+The problem: [paste it]
+My current thinking: [where I am starting from, even if it is nowhere]
+
+Conventions of my course (use them, and point out when a source differs):
+ - Circuits are read left to right; the formula is written right to left, so
+   &quot;A then B&quot; is the operator BA.
+ - The top wire is the first tensor factor and the most significant bit:
+   |x&gt; = |x1&gt;⊗…⊗|xn&gt;, x = Σ xi 2^(n−i).
+ - &lt;φ|ψ&gt; is antilinear in φ. H = (X+Z)/√2, S = diag(1,i), T = diag(1,e^(iπ/4)),
+   CNOT |j&gt;|k&gt; = |j&gt;|k⊕j&gt; with the control first, U_f |x,y&gt; = |x, y⊕f(x)&gt;.
+ - Every equation between circuits says whether it is equal, equal up to a
+   global phase (U ≃ V), or equal up to a non-zero scalar.
+ - Every complexity claim says whether it is proved, relative to an oracle, or
+   conjectured; a gate count says which gates it counts.
+
+Rules for you:
+
+ 1. First ask me to restate the problem in my own words and say exactly what is
+    given and what is wanted, wire by wire if there is a circuit. Check I have
+    understood before we go on.
+ 2. Ask ONE question at a time. Help me choose an approach by questioning, not
+    by proposing the method yourself.
+ 3. When I propose a method, make me justify why it should work BEFORE I grind
+    through it — and whether it is cheaper to track basis states, to multiply
+    matrices, or to use an identity.
+ 4. Make me say what the answer must satisfy before I compute it, then check:
+    is the result normalised, do the probabilities add to one, is the operator
+    unitary, does it agree with the one- or two-qubit case, is a phase global
+    or relative?
+ 5. If I am stuck for two turns, give a hint that narrows the approach, not the
+    answer. Only answer directly if I say &quot;just tell me&quot;.
+ 6. Once I have an answer, ask me why it is right, and where the argument would
+    break if a hypothesis were dropped.
+
+Begin by asking me to restate the problem in my own words.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><h2>Working in pairs</h2> <ol class="steps"> <li>Pair up. Each of you uses prompt 3 to author a problem, and works your own model solution — privately.</li><li>Swap. Hand over only the problem, not your solution.</li><li>Solve. Each of you works the other&#39;s problem using prompt 4.</li><li>Debrief without AI. Compare: did the solutions agree? Did the problem have a hole? Was the setter&#39;s own model answer actually right? This human step is the point of the exercise.</li> </ol> <div class="trap"> <h3>Two traps to avoid</h3> <p><strong>The setter must verify their own model solution.</strong> Do not trust an AI-generated answer key. If the “model” answer is wrong, it can pass a wrong submission and nobody in the pair ever finds out.</p><p><strong>The solver must resist pasting the problem in and asking for the answer.</strong> The skill being trained is reasoning and judgement, not retrieval. The whole exercise depends on not doing this.</p> </div> <script>
+    (function () {
+      /** Copy synchronously inside the click; the async API is the fallback. */
+      function copy(text) {
+        var area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed"; area.style.opacity = "0"; area.style.top = "0";
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+        document.body.removeChild(area);
+        if (!ok && navigator.clipboard) {
+          navigator.clipboard.writeText(text).catch(function () {});
+          ok = true;
+        }
+        return ok;
+      }
+      function say(status, message) {
+        if (!status) return;
+        status.textContent = message;
+        status.classList.add("is-live");
+      }
+
+      // ---- Ask about a lecture -------------------------------------------
+      var ask = document.querySelector("[data-ask]");
+      if (ask) {
+        var data = JSON.parse(ask.dataset.ask);
+        var text = JSON.parse(ask.dataset.text);
+        var lectureSelect = ask.querySelector("[data-lecture]");
+        var topics = ask.querySelector("[data-topics]");
+        var detail = ask.querySelector("[data-detail]");
+        var detailLabel = ask.querySelector("[data-detail-label]");
+        var preview = ask.querySelector("[data-preview]");
+        var status = ask.querySelector("[data-status]");
+
+        var fill = function (template, values) {
+          return template.replace(/\{(\w+)\}/g, function (whole, key) {
+            return key in values ? values[key] : whole;
+          });
+        };
+        var lecture = function () {
+          return data.lectures.find(function (l) { return String(l.id) === lectureSelect.value; });
+        };
+        var mode = function () {
+          var picked = ask.querySelector("input[name=ask-mode]:checked");
+          return data.modes.find(function (m) { return m.id === (picked && picked.value); }) || data.modes[0];
+        };
+        var topic = function () {
+          var picked = ask.querySelector("input[name=ask-topic]:checked");
+          return picked ? picked.value : "";
+        };
+
+        var renderTopics = function () {
+          topics.textContent = "";
+          lecture().sections.forEach(function (title, index) {
+            var label = document.createElement("label");
+            label.className = "topic-chip";
+            var input = document.createElement("input");
+            input.type = "radio"; input.name = "ask-topic"; input.value = title; input.checked = index === 0;
+            var span = document.createElement("span");
+            span.textContent = title;
+            label.appendChild(input); label.appendChild(span);
+            topics.appendChild(label);
+          });
+        };
+        var render = function () {
+          var l = lecture(), m = mode(), typed = detail.value.trim();
+          detailLabel.textContent = m.detailLabel;
+          detail.placeholder = m.detailPlaceholder;
+          var context = fill(data.context, { n: l.id, title: l.title, topic: topic() });
+          var detailText = typed ? fill(m.detailFilled, { detail: typed }) : m.detailEmpty;
+          preview.value = fill(m.template, { context: context, detail: detailText })
+            .replace(/\n{3,}/g, "\n\n");
+          syncAiMode();
+        };
+        var aiMode = ask.querySelector("[data-ai-mode]");
+        var syncAiMode = function () {
+          aiMode.href = "https://www.google.com/search?udm=50&q=" + encodeURIComponent(preview.value);
+        };
+        // The preview is editable, and an edited prompt is the one to send.
+        preview.addEventListener("input", syncAiMode);
+
+        // A lecture page links here as ai/?lecture=N, so arrive on that lecture.
+        var wanted = new URLSearchParams(location.search).get("lecture");
+        if (wanted && data.lectures.some(function (l) { return String(l.id) === wanted; })) {
+          lectureSelect.value = wanted;
+          renderTopics();
+        }
+        lectureSelect.addEventListener("change", function () { renderTopics(); render(); });
+        // The preview is excluded: its change event fires on blur, and
+        // re-rendering then would throw away what the student just edited.
+        ask.addEventListener("change", function (event) {
+          if (event.target !== lectureSelect && event.target !== preview && event.target !== detail) render();
+        });
+        detail.addEventListener("input", render);
+        render();
+
+        ask.querySelector("[data-copy-preview]").addEventListener("click", function () {
+          if (copy(preview.value)) { say(status, text.copied); }
+          else { preview.select(); say(status, text.selected); }
+        });
+      }
+
+      // ---- The long prompts ----------------------------------------------
+      var strings = ask ? JSON.parse(ask.dataset.text) : { copied: "✓", selected: "Ctrl+C" };
+      document.querySelectorAll("[data-prompt]").forEach(function (card) {
+        var source = card.querySelector("[data-prompt-text]");
+        var body = source.textContent || "";
+        var status = card.querySelector("[data-status]");
+        var selectSource = function () {
+          var range = document.createRange();
+          range.selectNodeContents(source);
+          var selection = window.getSelection();
+          if (selection) { selection.removeAllRanges(); selection.addRange(range); }
+        };
+        card.querySelector("[data-copy]").addEventListener("click", function () {
+          if (copy(body)) { say(status, strings.copied); }
+          else { selectSource(); say(status, strings.selected); }
+        });
+      });
+    })();
+  </script>  </main> <footer class="site-footer"> <div class="wrap"> <p> Quantum Computing — Part I: Circuits, Algorithms and Codes.
+  Worked solutions are done in the tutorials and are not published here. </p> </div> </footer> <script>
+      document.querySelector("[data-theme-toggle]")?.addEventListener("click", function () {
+        var root = document.documentElement;
+        var current = root.getAttribute("data-theme");
+        if (!current) {
+          current = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        var next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("computing-theme", next); } catch (e) {}
+      });
+    </script>  <script type="module" src="/computing/_astro/Base.astro_astro_type_script_index_0_lang.BdCApX30.js"></script> </body> </html>

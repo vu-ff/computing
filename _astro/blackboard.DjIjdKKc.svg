@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 500" width="1800" height="500" fill="#000" stroke="#000" stroke-linecap="round" stroke-linejoin="round" font-family="Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, 'DejaVu Serif', serif">
+<!-- The page-top blackboard. Used as a CSS mask (black = ink), so its colour comes from the theme. Formulas are from Part I, in the course's frozen conventions (notes/notation-bible.md, section C): H = (X+Z)/sqrt2 (C2), the oracle with the query register first (C3), the Hadamard transform (C4), the QFT with the + sign of Symmetries' characters (C5), Grover's angle (C7), Knill-Laflamme with projectors Pi (Q8), stars and plaquettes (C9), and a circuit read left to right with the control on the top wire (C1): H, then CNOT, makes the Bell state. -->
+<g stroke="none">
+<text x="40" y="70" font-size="34" font-style="italic" transform="rotate(-2 40 70)">H = (X + Z)/√2</text>
+<text x="52" y="128" font-size="26" font-style="italic" transform="rotate(-1 52 128)">U<tspan font-size="18" dy="6">f</tspan><tspan dy="-6"> |x, y⟩ = |x, y ⊕ f(x)⟩</tspan></text>
+<text x="40" y="188" font-size="26" font-style="italic" transform="rotate(1 40 188)">H<tspan font-size="16" dy="-12">⊗n</tspan><tspan dy="12">|x⟩ = 2</tspan><tspan font-size="16" dy="-12">−n/2</tspan><tspan dy="12"> Σ (−1)</tspan><tspan font-size="16" dy="-12">x·y</tspan><tspan dy="12"> |y⟩</tspan></text>
+<text x="40" y="250" font-size="26" font-style="italic" transform="rotate(-1 40 250)">Tr(Tr<tspan font-size="16" dy="6">B</tspan><tspan dy="-6">(ρ) A) = Tr(ρ (A ⊗ 1))</tspan></text>
+<text x="52" y="312" font-size="24" font-style="italic" transform="rotate(1 52 312)">sin²((2ℓ + 1)θ),   sin θ = 1/√N</text>
+<text x="40" y="374" font-size="26" font-style="italic" transform="rotate(-1 40 374)">Π<tspan font-size="16" dy="6">C</tspan><tspan dy="-6"> E</tspan><tspan font-size="16" dy="6">i</tspan><tspan font-size="16" dy="-14">†</tspan><tspan dy="8"> E</tspan><tspan font-size="16" dy="6">j</tspan><tspan dy="-6"> Π</tspan><tspan font-size="16" dy="6">C</tspan><tspan dy="-6"> = α</tspan><tspan font-size="16" dy="6">ij</tspan><tspan dy="-6"> Π</tspan><tspan font-size="16" dy="6">C</tspan></text>
+<text x="52" y="430" font-size="22" font-style="italic" transform="rotate(1 52 430)">BPP ⊆ BQP ⊆ PSPACE</text>
+<text x="1010" y="110" font-size="28" font-style="italic" transform="rotate(-1 1010 110)">QFT |x⟩ = N<tspan font-size="17" dy="-12">−1/2</tspan><tspan dy="12"> Σ</tspan><tspan font-size="16" dy="6">y</tspan><tspan dy="-6"> e</tspan><tspan font-size="17" dy="-12">+2πixy/N</tspan><tspan dy="12"> |y⟩</tspan></text>
+<text x="1020" y="200" font-size="26" font-style="italic" transform="rotate(1 1020 200)">A<tspan font-size="16" dy="6">s</tspan><tspan dy="-6"> = Π X</tspan><tspan font-size="16" dy="6">e</tspan><tspan dy="-6">,    B</tspan><tspan font-size="16" dy="6">p</tspan><tspan dy="-6"> = Π Z</tspan><tspan font-size="16" dy="6">e</tspan></text>
+<text x="1000" y="290" font-size="24" font-style="italic" transform="rotate(-1 1000 290)">C(e<tspan font-size="15" dy="-11">iα</tspan><tspan dy="11">U) = (diag(1, e</tspan><tspan font-size="15" dy="-11">iα</tspan><tspan dy="11">) ⊗ 1) C(U)</tspan></text>
+<text x="1030" y="380" font-size="24" font-style="italic" transform="rotate(1 1030 380)">d = min { wt E : E ∈ N(S) \ ⟨iI⟩S }</text>
+<text x="1000" y="450" font-size="22" font-style="italic" transform="rotate(-1 1000 450)">|1⟩ = r<tspan font-size="15" dy="-11">−1/2</tspan><tspan dy="11"> Σ</tspan><tspan font-size="15" dy="6">s</tspan><tspan dy="-6"> |u</tspan><tspan font-size="15" dy="6">s</tspan><tspan dy="-6">⟩</tspan></text>
+<text x="560" y="198" font-size="22" font-style="italic">|0⟩</text>
+<text x="560" y="298" font-size="22" font-style="italic">|0⟩</text>
+<text x="679" y="200" font-size="26" font-style="italic">H</text>
+<text x="905" y="250" font-size="22" font-style="italic">Φ⁺</text>
+</g>
+<g fill="none" stroke-width="2.2">
+<path d="M610 191 L665 191 M705 191 L880 191 M610 291 L880 291"/>
+<rect x="665" y="171" width="40" height="40" rx="2"/>
+<path d="M780 191 L780 305"/>
+<circle cx="780" cy="291" r="14"/>
+<path d="M766 291 L794 291"/>
+<path d="M888 175 Q902 241 888 307"/>
+</g>
+<circle cx="780" cy="191" r="6" stroke="none"/>
+</svg>
